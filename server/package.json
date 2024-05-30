@@ -1,0 +1,20 @@
+{
+  "name": "projeto-bar-server",
+  "version": "1.0.0",
+  "description": "Servidor para o projeto Bar",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "author": "Seu Nome",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.17.1",
+    "mysql2": "^3.9.9",
+    "nodemon": "^3.1.2",
+    "sequelize": "^6.37.3"
+  }
+}
