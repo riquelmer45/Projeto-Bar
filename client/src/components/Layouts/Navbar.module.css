@@ -1,0 +1,45 @@
+.Navbar {
+  display: flex;
+  justify-content: space-between;
+  background-color: #222;
+  padding: 1em;
+}
+
+.logoContainer {
+  width: 150px; /* Largura mínima */
+  height: 50px; /* Altura mínima */
+}
+
+.logo {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* Manter a proporção da imagem */
+}
+
+.list {
+  display: flex;
+  list-style: none;
+  align-items: center;
+}
+
+.item {
+  margin-right: 1em;
+}
+
+.item a {
+  color: gold; /* Cor do texto em dourado */
+  text-decoration: none;
+}
+
+.item a:hover {
+  color: gold; /* Manter a cor do texto em dourado ao passar o mouse */
+}
+
+.contato-link {
+  border: 2px solid black; /* Caixa preta em volta do texto */
+  padding: 0.5em 1em;
+}
+
+.contato-link:hover {
+  border-color: gray; /* Caixa cinza ao passar o mouse */
+}

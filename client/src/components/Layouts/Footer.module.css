@@ -1,0 +1,36 @@
+/* Footer.module.css */
+
+.footer {
+  background-color: #231f20; /* Alteração da cor de fundo para #231f20 */
+  color: #f3e999; /* Alteração da cor do texto para #f3e999 (dourado) */
+  padding: 3em;
+  text-align: center;
+}
+
+.social_list {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+}
+
+.social_list li {
+  margin: 0 1em;
+}
+
+.social_list li:hover {
+  color: #808080; /* Alteração da cor do ícone ao passar o mouse por cima para #808080 (cinza) */
+}
+
+.social_list svg {
+  font-size: 1.5em;
+  cursor: pointer;
+}
+
+.copy_right {
+  margin-top: 2em;
+}
+
+.copy_right span {
+  font-weight: bold;
+  color: #f3e999; /* Manutenção da cor do texto do span para #f3e999 (dourado) */
+}

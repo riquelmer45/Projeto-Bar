@@ -1,0 +1,35 @@
+.menu-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  min-width: 450px;
+}
+
+.menu-item .item-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 1;
+  text-align: center;
+}
+
+.menu-item img {
+  width: 100px;
+  height: 100px;
+  margin-left: 2em;
+}
+
+.menu-item h3,
+.menu-item p {
+  margin: 0;
+  padding: 0.5em;
+}
+
+.menu-item .price {
+  font-size: 20px;
+  font-weight: bold;
+}

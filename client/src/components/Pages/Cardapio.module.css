@@ -1,0 +1,61 @@
+.cardapio-container {
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  width: 100%;
+  background-color: rgb(190, 190, 190);
+}
+
+.cardapio-nav {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  border-radius: 20px;
+  padding: 0;
+  margin-bottom: 20px;
+  position: sticky;
+  top: 0;
+  background-color: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(10px);
+  z-index: 1;
+}
+
+.cardapio-nav.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  max-width: 1200px;
+  margin: 10px auto;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.cardapio-nav li {
+  cursor: pointer;
+}
+
+.cardapio-nav a {
+  text-decoration: none; /* remove underline */
+  color: gold; /* change color to goldenrod */
+}
+
+.cardapio-nav a:hover {
+  color: black;
+}
+
+.cardapio-nav a:active {
+  color: inherit; /* revert to original color when clicked */
+}
+
+.cardTitle {
+  font-size: 1em;
+  color: black;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.menuItems {
+  width: 700px;
+  margin: auto;
+  justify-content: center;
+}

@@ -1,0 +1,67 @@
+/* Estilos para a home container */
+.home_container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center; /* Centraliza horizontalmente */
+  align-items: center; /* Centraliza verticalmente */
+}
+
+/* Webfont: Nohemi-Light */
+@font-face {
+  font-family: "NohemiLight";
+  src: url("../../fonts/Nohemi-Light.css"); /* IE9 Compat Modes */
+
+  font-style: normal;
+  font-weight: normal;
+  text-rendering: optimizeLegibility;
+}
+
+/* Estilos para o conteúdo */
+.content {
+  /* Fundo branco com 20% de opacidade */
+  padding: 1em; /* Adiciona espaço interno ao redor do texto */
+  border-radius: 10px; /* Borda arredondada */
+  margin-top: 1em; /* Espaço superior */
+  text-align: center;
+}
+
+.title {
+  color: gold; /* Cor dourada */
+}
+
+.bar_name {
+  color: gold; /* Cor dourada */
+  display: flex;
+  align-items: center; /* Centraliza verticalmente */
+  justify-content: center; /* Centraliza horizontalmente */
+}
+
+.icon {
+  width: 250px; /* Tamanho do ícone */
+  height: 250px; /* Tamanho do ícone */
+}
+
+.slogan {
+  font-family: "NohemiLight";
+  color: white; /* Cor do texto */
+  font-size: 3em;
+  margin-top: 4em;
+}
+
+/* Estilos para o botão de reserva */
+.link_button {
+  margin-top: 2em;
+  color: #808080; /* Cor do texto do botão */
+  background-color: gold; /* Cor de fundo do botão */
+  border: none; /* Remove a borda */
+  padding: 1em 2em; /* Ajusta o tamanho do botão */
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease, color 0.3s ease; /* Transição suave */
+}
+
+.link_button:hover {
+  background-color: rgba(255, 215, 0, 0.4); /* Fundo com 20% de opacidade */
+  color: black; /* Cor do texto ao passar o mouse */
+}

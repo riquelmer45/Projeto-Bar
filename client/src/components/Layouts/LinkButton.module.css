@@ -1,0 +1,12 @@
+.LinkButton {
+  border-radius: 20px;
+  background-color: yellow;
+  color: black;
+  padding: 10px 20px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.LinkButton:hover {
+  opacity: 0.3;
+}
