@@ -30,7 +30,7 @@ const Cardapio = () => {
   useEffect(() => {
     const handleScroll = () => {
       const navbar = document.querySelector(`.${styles["cardapio-nav"]}`);
-      if (window.pageYOffset > 0) {
+      if (window.scrollY > 0) {
         navbar.classList.add(`${styles["sticky"]}`);
       } else {
         navbar.classList.remove(`${styles["sticky"]}`);

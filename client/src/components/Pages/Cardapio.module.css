@@ -1,9 +1,10 @@
 .cardapio-container {
+  display: flex;
   flex-direction: column;
   align-items: center;
   padding: 20px;
   width: 100%;
-  background-color: rgb(190, 190, 190);
+  background-color: #212529;
 }
 
 .cardapio-nav {
@@ -15,9 +16,8 @@
   margin-bottom: 20px;
   position: sticky;
   top: 0;
-  background-color: rgba(255, 255, 255, 0.7);
-  backdrop-filter: blur(10px);
-  z-index: 1;
+  background-color: #e9eaec;
+  z-index: 5;
 }
 
 .cardapio-nav.sticky {
@@ -32,30 +32,34 @@
 
 .cardapio-nav li {
   cursor: pointer;
+  padding: 10px;
 }
 
 .cardapio-nav a {
-  text-decoration: none; /* remove underline */
-  color: gold; /* change color to goldenrod */
+  text-decoration: none;
+  color: #212529;
 }
 
 .cardapio-nav a:hover {
-  color: black;
+  color: #6d7275;
 }
 
 .cardapio-nav a:active {
-  color: inherit; /* revert to original color when clicked */
+  color: inherit;
 }
 
 .cardTitle {
   font-size: 1em;
-  color: black;
+  color: #ffd700;
   margin-bottom: 20px;
   text-align: center;
 }
 
 .menuItems {
-  width: 700px;
-  margin: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   justify-content: center;
+  align-items: center;
+  width: 1000px;
 }
