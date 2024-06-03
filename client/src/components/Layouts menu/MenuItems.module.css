@@ -32,9 +32,8 @@
 }
 
 .menu-item img {
-  padding-top: 25px;
-  width: 100px;
-  height: 100px;
+  width: 200px;
+  height: auto;
 }
 
 .menu-item h3,
