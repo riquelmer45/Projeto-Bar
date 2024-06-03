@@ -10,6 +10,7 @@ import Reserva from "./components/Pages/Reserva";
 import Navbar from "./components/Layouts/Navbar";
 import Container from "./components/Layouts/Container";
 import Footer from "./components/Layouts/Footer";
+import MenuForm from "./components/Forms/MenuForm";
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
           <Route path="/enderecos" element={<Enderecos />} />
           <Route path="/contato" element={<Contato />} />
           <Route path="/reserva" element={<Reserva />} />
+          <Route path="/menuForm" element={<MenuForm />} />
         </Routes>
       </Container>
       <Footer />
