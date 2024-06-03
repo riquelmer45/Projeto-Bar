@@ -18,9 +18,14 @@
 }
 
 .menu-item img {
+<<<<<<< Updated upstream
   width: 100px;
   height: 100px;
   margin-left: 2em;
+=======
+  width: 200px;
+  height: auto;
+>>>>>>> Stashed changes
 }
 
 .menu-item h3,
