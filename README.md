@@ -1,74 +1,56 @@
-# Getting Started with Create React App
+# Projeto RMODESTO BAR
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Este projeto é um estudo e treinamento de JavaScript, React, Express, CORS, Multer, SQL e outras tecnologias. Foi inicializado com [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## Finalidade
 
-In the project directory, you can run:
+O objetivo deste projeto é fornecer uma plataforma para aprender e praticar JavaScript, React, Express, CORS, Multer, SQL e outras tecnologias relacionadas. Ele serve como um exemplo prático de como essas tecnologias podem ser usadas para construir um aplicativo web funcional.
+
+## Tecnologias Utilizadas
+
+Este projeto utiliza as seguintes tecnologias:
+
+- JavaScript: A linguagem de programação usada para criar a lógica do aplicativo.
+- React: Uma biblioteca JavaScript para construir interfaces de usuário.
+- Express: Um framework para aplicativo de rede de aplicativos Node.js minimalista e flexível que fornece um conjunto robusto de recursos para aplicativos web e móvel.
+- CORS: Um pacote node.js para fornecer um middleware Connect/Express que pode ser usado para habilitar o CORS com várias opções.
+- Multer: Um middleware node.js para manipulação de multipart/form-data, que é usado principalmente para upload de arquivos.
+- SQL: Uma linguagem de programação usada para gerenciar e manipular bancos de dados.
+- Create React App: Uma ferramenta que configura o ambiente de desenvolvimento para que você possa usar as últimas funcionalidades do JavaScript, JSX, e outras funcionalidades do React.
+- (Inclua outras tecnologias usadas no projeto aqui)
+
+## Scripts Disponíveis
+
+No diretório do projeto, você pode executar:
 
 ### `npm run client`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Executa o aplicativo no modo de desenvolvimento.\
+Abra [http://localhost:3000](http://localhost:3000) para visualizá-lo no navegador.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+A página será recarregada se você fizer alterações.\
+Você também pode ver quaisquer erros de lint no console.
 
 ### `npm run server`
-Runs the backend application in development mode./
-Open [http://localhost:5000](http://localhost:5000) to view it in your browser.
+
+Executa o aplicativo backend no modo de desenvolvimento.\
+Abra [http://localhost:5000](http://localhost:5000) para visualizá-lo no navegador.
 
 ### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Inicia o executor de testes no modo de observação interativo.\
+Veja a seção sobre [execução de testes](https://facebook.github.io/create-react-app/docs/running-tests) para mais informações.
 
 ### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Compila o aplicativo para produção na pasta `build`.\
+Ele agrupa corretamente o React no modo de produção e otimiza a compilação para obter o melhor desempenho.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+A compilação é minificada e os nomes dos arquivos incluem os hashes.\
+Seu aplicativo está pronto para ser implantado!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Veja a seção sobre [implantação](https://facebook.github.io/create-react-app/docs/deployment) para mais informações.
 
-### `npm run eject`
+## Aprenda Mais
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Para aprender mais sobre o React, confira a [documentação do React](https://reactjs.org/).

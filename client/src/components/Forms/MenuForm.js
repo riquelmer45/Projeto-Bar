@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
+import Styles from "./MenuForm.module.css";
 
 const MenuForm = () => {
   const [name, setName] = useState("");
@@ -36,7 +37,6 @@ const MenuForm = () => {
       .post("http://localhost:5000/menu", formData)
       .then((response) => {
         console.log(response.data);
-        // Limpar o formulário após o envio bem-sucedido
         setName("");
         setPrice("");
         setDescription("");
@@ -48,60 +48,85 @@ const MenuForm = () => {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
-      <label>
-        Nome:
-        <input
-          type="text"
-          value={name}
-          onChange={(e) => setName(e.target.value)}
-        />
-      </label>
-      <br />
-      <label>
-        Preço:
-        <input
-          type="text"
-          value={price}
-          onChange={(e) => setPrice(e.target.value)}
-        />
-      </label>
-      <br />
-      <label>
-        Imagem:
-        <input type="file" onChange={(e) => setImage(e.target.files[0])} />
-      </label>
-      <br />
-      <label>
-        Descrição:
-        <input
-          type="text"
-          value={description}
-          onChange={(e) => setDescription(e.target.value)}
-        />
-      </label>
-      <br />
-      <label>
-        Categoria:
-        <select
-          value={category_id}
-          onChange={(e) => setcategory_id(Number(e.target.value))}
-        >
-          {categories.map((category) => (
-            <option key={category.id} value={category.id}>
-              {category.name}
-            </option>
-          ))}
-        </select>
-      </label>
-      <br />
-      <label>
-        ID da Categoria:
-        <input type="text" value={category_id} disabled />
-      </label>
-      <br />
-      <button type="submit">Cadastrar</button>
-    </form>
+    <div className={Styles.pageContainer}>
+      <form onSubmit={handleSubmit} className={Styles.formContainer}>
+        <div className={Styles.titleContainer}>
+          <h1>Cadastrar prato no Cardapio</h1>
+        </div>
+        <div className={Styles.inputContainer}>
+          <br />
+          <div>
+            <label>
+              Nome:
+              <input
+                type="text"
+                value={name}
+                onChange={(e) => setName(e.target.value)}
+              />
+            </label>
+          </div>
+          <br />
+          <div className="input-group">
+            <label>
+              Preço:
+              <input
+                type="text"
+                value={price}
+                onChange={(e) => setPrice(e.target.value)}
+              />
+            </label>
+          </div>
+          <br />
+          <div className={Styles.imputImg}>
+            <label>
+              Imagem:
+              <input
+                type="file"
+                onChange={(e) => setImage(e.target.files[0])}
+              />
+            </label>
+          </div>
+          <br />
+          <div className="input-group">
+            <label>
+              Descrição:
+              <input
+                type="text"
+                value={description}
+                onChange={(e) => setDescription(e.target.value)}
+              />
+            </label>
+          </div>
+          <br />
+          <div className={Styles.categoriesContainer}>
+            <div className="input-group">
+              <label>
+                Categoria:
+                <select
+                  value={category_id}
+                  onChange={(e) => setcategory_id(Number(e.target.value))}
+                >
+                  {categories.map((category) => (
+                    <option key={category.id} value={category.id}>
+                      {category.name}
+                    </option>
+                  ))}
+                </select>
+              </label>
+            </div>
+            <br />
+            <div className={Styles.idLabel}>
+              <label>
+                ID:
+                <input type="text" value={category_id} disabled />
+              </label>
+            </div>
+          </div>
+          <br />
+        </div>
+        <input type="submit" value="Enviar" className={Styles.submitBtn} />
+      </form>
+    </div>
   );
 };
 

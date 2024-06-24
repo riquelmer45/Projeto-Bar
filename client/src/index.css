@@ -28,6 +28,27 @@
   z-index: -1; /* Coloca a div atrás de todo o conteúdo */
 }
 
+.contatopage #root {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("./img/EntreEmContato.webp");
+  background-size: cover;
+  background-position: center;
+}
+
+.cardapiopage #root {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("./img/cardapiobackground.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.sobrenospage #root {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("./img/sobreNosBG.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
 html,
 body,
 #root {

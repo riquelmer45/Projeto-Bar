@@ -1,0 +1,55 @@
+.pageContainer {
+  display: flex;
+  font-family: "Roboto", sans-serif;
+  width: 100%;
+  background-color: #212529;
+}
+
+.formContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 30%;
+  height: 50%;
+  margin: auto;
+  padding: 1rem;
+  background-color: #edf2f4;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(#e9eaec 0.1);
+}
+.inputContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+.categoriesContainer {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.idLabel {
+  padding-left: 1em;
+}
+
+.idLabel input {
+  width: 30%;
+}
+
+.submitBtn {
+  background-color: #3e9b46;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-top: 1rem;
+}

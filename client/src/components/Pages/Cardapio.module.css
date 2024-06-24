@@ -1,13 +1,18 @@
-.cardapio-container {
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+.cardapioContainer {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 20px;
   width: 100%;
-  background-color: #212529;
 }
 
-.cardapio-nav {
+.cardapioNav {
   display: flex;
   justify-content: space-around;
   list-style: none;
@@ -20,7 +25,7 @@
   z-index: 5;
 }
 
-.cardapio-nav.sticky {
+.cardapioNav.sticky {
   position: fixed;
   top: 0;
   width: 100%;
@@ -30,21 +35,21 @@
   transform: translateX(-50%);
 }
 
-.cardapio-nav li {
+.cardapioNav li {
   cursor: pointer;
   padding: 10px;
 }
 
-.cardapio-nav a {
+.cardapioNav a {
   text-decoration: none;
   color: #212529;
 }
 
-.cardapio-nav a:hover {
+.cardapioNav a:hover {
   color: #6d7275;
 }
 
-.cardapio-nav a:active {
+.cardapioNav a:active {
   color: inherit;
 }
 

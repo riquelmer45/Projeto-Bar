@@ -6,13 +6,13 @@ const MenuItem = ({ item }) => {
   console.log(imagePath);
 
   return (
-    <div className={styles["menu-item"]} key={item.id}>
-      <div className={styles["item-info"]}>
+    <div className={styles.menuItem} key={item.id}>
+      <div className={styles.itemInfo}>
         <h3>{item.name}</h3>
         <p>{item.description}</p>
         <p className={styles.price}>R$ {item.price}</p>
       </div>
-      <div className={styles["item-image-container"]}>
+      <div className={styles.itemImageContainer}>
         {item.image ? (
           <img src={imagePath} alt={item.name} />
         ) : (
@@ -24,7 +24,7 @@ const MenuItem = ({ item }) => {
 };
 
 const MenuItems = ({ menuItems, categoryId }) => (
-  <div className={styles["menu-items-container"]}>
+  <div className={styles.menuItemsContainer}>
     {menuItems
       .filter((item) => item.category_id === categoryId)
       .map((item) => (

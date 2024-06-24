@@ -1,25 +1,27 @@
 .Navbar {
   display: flex;
   justify-content: space-between;
-  background-color: #222;
   padding: 1em;
+  font-size: 1em;
 }
 
 .logoContainer {
-  width: 150px; /* Largura mínima */
-  height: 50px; /* Altura mínima */
+  width: 150px;
+  height: auto;
+  margin: 0;
 }
 
 .logo {
   width: 100%;
   height: 100%;
-  object-fit: contain; /* Manter a proporção da imagem */
+  object-fit: contain;
 }
 
 .list {
   display: flex;
   list-style: none;
   align-items: center;
+  justify-content: flex-end;
 }
 
 .item {
@@ -27,19 +29,105 @@
 }
 
 .item a {
-  color: gold; /* Cor do texto em dourado */
+  color: #ffd700;
   text-decoration: none;
 }
 
 .item a:hover {
-  color: gold; /* Manter a cor do texto em dourado ao passar o mouse */
+  color: #edf2f4;
 }
 
-.contato-link {
-  border: 2px solid black; /* Caixa preta em volta do texto */
+.itemReserva a {
+  color: #ffd700;
+  text-decoration: none;
+}
+
+.itemReserva a:hover {
+  color: #212529;
+}
+
+.reservaLink {
+  background-color: #212529;
+  border-radius: 0.5em;
   padding: 0.5em 1em;
 }
 
-.contato-link:hover {
-  border-color: gray; /* Caixa cinza ao passar o mouse */
+.reservaLink:hover {
+  background-color: #edf2f4;
+}
+
+.hamburger {
+  display: none;
+}
+
+@media (max-width: 480px) {
+  .Navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .hamburger {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-self: center;
+    justify-content: space-around;
+    width: 2rem;
+    margin-left: 5.5em;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    z-index: 10000;
+  }
+
+  .line1,
+  .line2,
+  .line3 {
+    width: 25px;
+    height: 3px;
+    background-color: #edf2f4;
+    margin: 5px;
+    transition: all 0.3s ease;
+  }
+
+  .open1 {
+    transform: rotate(-45deg) translate(-12px, 6px);
+  }
+
+  .open2 {
+    opacity: 0;
+  }
+
+  .open3 {
+    transform: rotate(45deg) translate(-12px, -6px);
+  }
+
+  .list {
+    display: none;
+  }
+  .logoContainer {
+    width: 100px;
+    height: auto;
+    margin: 0;
+  }
+
+  .listHamburger {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    align-items: flex-end;
+    background-color: #212529;
+    opacity: 80%;
+    position: absolute;
+    margin: auto;
+    margin-top: 5em;
+    top: 0;
+    right: 0;
+    width: auto;
+    height: auto;
+    padding: 2em;
+    color: #ffd700;
+    gap: 1em;
+  }
 }

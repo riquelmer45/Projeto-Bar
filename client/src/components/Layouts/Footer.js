@@ -1,4 +1,9 @@
-import { FaInstagram, FaSnapchatGhost, FaFacebook } from "react-icons/fa";
+import {
+  FaInstagram,
+  FaSnapchatGhost,
+  FaFacebook,
+  FaGithub,
+} from "react-icons/fa";
 import style from "./Footer.module.css";
 
 function Footer() {
@@ -8,27 +13,26 @@ function Footer() {
         <li>
           <FaInstagram
             onClick={() =>
-              window.open("https://www.instagram.com/seuinstagram", "_blank")
+              window.open(
+                "https://www.instagram.com/riquelmermodesto.dev/",
+                "_blank"
+              )
             }
           />
         </li>
         <li>
-          <FaSnapchatGhost
+          <FaGithub
             onClick={() =>
-              window.open("https://www.snapchat.com/seusnapchat", "_blank")
-            }
-          />
-        </li>
-        <li>
-          <FaFacebook
-            onClick={() =>
-              window.open("https://www.facebook.com/seufacebook", "_blank")
+              window.open(
+                "https://github.com/riquelmer45/Projeto-Bar",
+                "_blank"
+              )
             }
           />
         </li>
       </ul>
       <p className={style.copy_right}>
-        <span>Nome do seu bar</span> &copy; 2024
+        <span>RMODESTO BAR</span> &copy; 2024
       </p>
     </footer>
   );

@@ -1,0 +1,130 @@
+.contatoContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contatoTitulo {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  gap: 10px;
+}
+
+.contatoConteudo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.contatoFormContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  border-radius: 20px;
+  background-color: #e9eaec;
+  width: 500px;
+  height: 260px;
+  padding: 20px;
+}
+
+.contatoFormContainer input {
+  width: 300px;
+  height: 30px;
+  margin-top: 10px;
+  border-radius: 5px;
+  border: 1px solid #e9eaec;
+}
+
+.contatoFormContainer textarea {
+  width: 300px;
+  height: 100px;
+  margin-top: 10px;
+  border-radius: 5px;
+  border: 1px solid #e9eaec;
+}
+
+.contatoFormContainer button {
+  width: 100px;
+  height: 30px;
+  margin-top: 10px;
+  border-radius: 5px;
+  border: 1px solid #e9eaec;
+  background-color: #3e9b46;
+  color: white;
+}
+
+.contatoCard {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #e9eaec;
+  border-radius: 16px;
+  padding: 20px;
+  gap: 10px;
+  width: 120px;
+  height: 120px;
+  align-items: center;
+  margin: 10px;
+}
+
+.contatoCard p {
+  font-size: 0.5em;
+  font-style: oblique;
+  color: black;
+}
+
+.instagramIcon {
+  width: 40px;
+  height: 40px;
+}
+
+.mensagem {
+  width: 300px;
+}
+
+@media (max-width: 480px) {
+  .contatoContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contatoConteudo {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    max-width: 80%;
+  }
+
+  .contatoTitulo {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    gap: 10px;
+  }
+
+  .contatoTitulo h1 {
+    font-size: 1.8em;
+  }
+
+  .contatoCardContainer {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+}
